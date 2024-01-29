@@ -9,7 +9,7 @@ export default defineNuxtConfig({
             categories: ['productivity', 'education'],
             description: '86GPT is an open-source, amazingly crafted conversational UI and alternative to ChatGPT.',
             display: 'standalone',
-            lang: 'en',
+            lang: 'cn',
             id: `86GPT-${new Date().getTime()}`,
             theme_color: '#3f3f3f',
         },
