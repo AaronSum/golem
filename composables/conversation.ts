@@ -380,7 +380,7 @@ export const useConversations = () => {
             await upsertAssistantMessage(assistantMessage as any, true)
             await updateConversationList()
 
-            if (fromConversation.title.trim() === 'Untitled Conversation') {
+            if (fromConversation.title.trim() === '未命名对话') {
                 await generateConversationTitle(fromConversation.id)
             }
         }
@@ -434,7 +434,7 @@ export const useConversations = () => {
         await Promise.all(conversationList.value.map(
             (conversation: types.Conversation) => limit(() => deleteConversation(conversation.id)),
         ))
-        const newConversation = await createConversation('Untitled Conversation')
+        const newConversation = await createConversation('未命名对话')
         await switchConversation(newConversation.id)
     }
 

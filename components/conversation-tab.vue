@@ -104,7 +104,7 @@ const onDeleteConversation = async (id: string) => {
     }
     else if (conversationList.value.length === 1) {
         // If there are no more conversations, create a new one
-        const newConversation = await createConversation('Untitled Conversation')
+        const newConversation = await createConversation('未命名对话')
         await switchConversation(newConversation.id)
     }
     await deleteConversation(id)

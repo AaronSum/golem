@@ -10,7 +10,7 @@ const { isSidebarCompact } = useUI()
 const colorMode = useColorMode()
 
 const onCreateConversation = async () => {
-    const newConversation = await createConversation('Untitled Conversation')
+    const newConversation = await createConversation('未命名对话')
     await switchConversation(newConversation.id)
 }
 

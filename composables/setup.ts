@@ -59,7 +59,7 @@ export async function useSetup(options?: { disableStorage: boolean; embedded?: b
 
                 if (conversationList.value && conversationList.value.length === 0 && !options?.embedded) {
                     logger.info('No conversations present, creating a new one')
-                    const newConversation = await createConversation('Untitled Conversation')
+                    const newConversation = await createConversation('未命名对话')
                     await switchConversation(newConversation.id)
                 }
                 else if (!options?.embedded) {

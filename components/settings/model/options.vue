@@ -24,7 +24,7 @@ const maxTokensInput = syncStorageRef(maxTokens)
                 v-model="maxTokensInput"
                 mt-2
                 text-11px sm:text-4
-                placeholder="Maximum tokens"
+                placeholder="最大token数"
                 w-full text-gray-5 dark:text-gray-1
             />
         </div>

@@ -23,7 +23,7 @@ const conversationsSortedByUpdatedAt = computed(() => {
 })
 
 const onCreateConversation = async () => {
-    const newConversation = await createConversation('Untitled Conversation')
+    const newConversation = await createConversation('未命名对话')
     await switchConversation(newConversation.id)
 }
 </script>
