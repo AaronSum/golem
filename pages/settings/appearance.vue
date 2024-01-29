@@ -7,16 +7,16 @@ const client = useClient()
 const { setPalette, color: currentColor, navigationBarPosition } = useAppearance()
 
 const colorModeOptions = [
-    { value: 'light', label: 'Light', icon: 'i-tabler-sun' },
-    { value: 'dark', label: 'Dark', icon: 'i-tabler-moon' },
-    { value: 'system', label: 'System', icon: 'i-tabler-3d-cube-sphere' },
+    { value: 'light', label: '浅色', icon: 'i-tabler-sun' },
+    { value: 'dark', label: '深色', icon: 'i-tabler-moon' },
+    { value: 'system', label: '系统', icon: 'i-tabler-3d-cube-sphere' },
 ] as const
 
 const navigationBarPositionOptions = [
-    { value: 'top', label: 'Top', icon: 'i-tabler-box-align-top' },
-    { value: 'bottom', label: 'Bottom', icon: 'i-tabler-box-align-bottom' },
-    { value: 'left', label: 'Left', icon: 'i-tabler-box-align-left' },
-    { value: 'right', label: 'Right', icon: 'i-tabler-box-align-right' },
+    { value: 'top', label: '上', icon: 'i-tabler-box-align-top' },
+    { value: 'bottom', label: '下', icon: 'i-tabler-box-align-bottom' },
+    { value: 'left', label: '左', icon: 'i-tabler-box-align-left' },
+    { value: 'right', label: '右', icon: 'i-tabler-box-align-right' },
 ]
 
 const hueSteppedThemeColorOptions = computed(() => {
@@ -51,7 +51,7 @@ function onThemeColorClick(color: string) {
             font-bold text-gray-6 dark:text-gray-3 mb-3
             text-14px sm:text-5
         >
-            Color Mode
+            外观模式
         </div>
         <div grid grid-cols-3 gap-2 sm:gap-3>
             <div
@@ -79,7 +79,7 @@ function onThemeColorClick(color: string) {
             font-bold text-gray-6 dark:text-gray-3 mb-3 mt-6
             text-14px sm:text-5
         >
-            Theme color
+            主题颜色
         </div>
         <div
             grid grid-gap-2
@@ -104,7 +104,7 @@ function onThemeColorClick(color: string) {
             font-bold text-gray-6 dark:text-gray-3 mb-3 mt-6
             text-14px sm:text-5
         >
-            Navigation bar position
+            导航栏位置
         </div>
 
         <div grid grid-cols-4 gap-2 sm:gap-3>

@@ -1,6 +1,6 @@
 const redirectMapping = {
     '/': '/chat',
-    '/settings': '/settings/api-key',
+    '/settings': '/settings/appearance',
 } as Record<string, string>
 
 export default defineNuxtRouteMiddleware((to) => {

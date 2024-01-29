@@ -2,8 +2,8 @@
 const { modelUsed } = useSettings()
 
 const options = [
-    { value: 'gpt-3.5-turbo', label: 'GPT 3.5', icon: 'i-tabler-brand-openai' },
-    { value: 'gpt-4', label: 'GPT 4', icon: 'i-tabler-brand-openai' },
+    { value: 'ERNIE-Bot-4', label: 'ERNIE-Bot-4', icon: 'i-tabler-brand-openai' },
+    { value: 'ERNIE-Bot-turbo', label: 'ERNIE-Bot-turbo', icon: 'i-tabler-brand-openai' },
 ] as const
 
 function onClick(model: string) {
@@ -18,7 +18,7 @@ function onClick(model: string) {
             mb-3 sm:mb-6
             text-14px sm:text-5
         >
-            Model
+            模型
         </div>
         <div flex gap-3>
             <div

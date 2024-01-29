@@ -7,9 +7,9 @@ function onBackdropClick() {
 }
 
 const conversationSettings = reactive({
-    model: null,
+    model: 'Ernie-4.0',
     creativity: null,
-    maxTokens: null,
+    maxTokens: 20000,
 })
 
 watch(() => conversationSettings, async (newSettings) => {
@@ -37,11 +37,11 @@ watch(() => conversationSettings, async (newSettings) => {
                     Settings
                 </GoTypography>
 
-                <SettingsModelSelect v-model="conversationSettings.model" />
+                <!-- <SettingsModelSelect v-model="conversationSettings.model" /> -->
 
                 <SettingsCreativitySelect v-model="conversationSettings.creativity" mt-6 />
 
-                <SettingsMaxTokensInput v-model="conversationSettings.maxTokens" mt-6 />
+                <!-- <SettingsMaxTokensInput v-model="conversationSettings.maxTokens" mt-6 /> -->
             </div>
         </Transition>
     </div>

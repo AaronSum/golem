@@ -7,8 +7,7 @@ import type { types } from '~~/utils/types'
 import trimIndent from '~~/utils/string'
 
 const MaxTokensPerModel = {
-    'gpt-4': 8180,
-    'gpt-3.5-turbo': 4080,
+    'ERNIE-Bot-4': 20000,
 } as Record<string, number>
 
 export const useConversations = () => {

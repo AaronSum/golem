@@ -48,7 +48,7 @@ const { isSidebarCompact } = useUI()
                 API key to start a conversation.
             </div>
             <div text-primary-600 dark:text-primary-400 mt-1>
-                Click here1
+                Click here
             </div>
         </div>
     </div>
