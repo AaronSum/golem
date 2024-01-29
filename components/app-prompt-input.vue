@@ -5,7 +5,7 @@ const emit = defineEmits(['update:modelValue', 'send'])
 const { apiKey } = useSettings()
 const { isTypingInCurrentConversation, currentConversation, stopConversationMessageGeneration } = useConversations()
 const textarea = ref()
-const isLogged = computed(() => Boolean(apiKey.value))
+const isLogged = computed(() => Boolean(true))
 
 const onSend = () => {
     if (!isTypingInCurrentConversation.value && props.modelValue) {

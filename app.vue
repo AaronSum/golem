@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 useHead({
-    title: 'Golem',
+    title: '86GPT - Golem',
     meta: [
-        { name: 'description', content: 'Golem is an open-source, amazingly crafted conversational UI and alternative to ChatGPT.' },
+        { name: 'description', content: '86GPT @86links' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1' },
         { property: 'og:image', content: '/og-image.png' },
         { property: 'og:image:width', content: '1200' },

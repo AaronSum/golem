@@ -2,7 +2,7 @@
 v: 0
 icon: assets/logo.png
 micros:
-    - name: golem
+    - name: 86gpt
       src: .
       engine: nuxt
       primary: true

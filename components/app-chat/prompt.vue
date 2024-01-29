@@ -48,7 +48,7 @@ function onHandlePromptClick() {
             <AppPromptInput
                 v-model="userMessageInput"
                 v-tooltip="{
-                    content: 'You have to add an API Key in the settings to send messages.',
+                    content: '请输入你想了解的内容。',
                     shown: showPromptTooltip,
                     triggers: [],
                 }"
