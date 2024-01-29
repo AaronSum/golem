@@ -185,7 +185,7 @@ const onDeleteConversation = async (id: string) => {
                         <GoLongPressButton
                             v-if="isHovering || isMobile"
                             v-tooltip="{
-                                content: 'Press and hold to delete conversation',
+                                content: '长按确认删除',
                                 delay: 450,
                             }"
                             :duration="800"
