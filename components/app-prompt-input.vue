@@ -119,7 +119,7 @@ function onStopGenerationClick() {
                     <GoButton @click="onStopGenerationClick">
                         <div i-tabler-player-stop-filled text-3 sm:text-5 />
                         <div whitespace-nowrap text-10px sm:text-14px>
-                            Stop talking!
+                            停止输出!
                         </div>
                     </GoButton>
                 </div>
