@@ -21,7 +21,7 @@ export async function fetchSSE(
             reason = res.statusText
         }
 
-        const message = `ChatGPT error ${res.status}: ${reason}`
+        const message = `error ${res.status}: ${reason}`
         const error = new OpenAIError({ message, cause: reason, statusCode: res.status })
         throw error
     }
@@ -43,7 +43,7 @@ export async function fetchSSE(
         }
 
         if (response?.detail?.type === 'invalid_request_error') {
-            const message = `ChatGPT error ${response.detail.message}: ${response.detail.code} (${response.detail.type})`
+            const message = `error ${response.detail.message}: ${response.detail.code} (${response.detail.type})`
             const error = new OpenAIError({
                 message,
                 cause: response.detail,
