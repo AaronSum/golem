@@ -4,7 +4,6 @@ import type { types } from '~~/utils/types'
 import { parseDateFields } from '~/utils/object'
 
 export const messageRouter = router({
-
     list: publicProcedure
         .input(
             z.object({
@@ -18,7 +17,7 @@ export const messageRouter = router({
             }
             const { items } = await ctx.deta.messages.fetch(query)
             return items.map<types.Message>(item => ({
-                ...item as any,
+                ...(item as any),
                 id: item.key as string,
             }))
         }),
@@ -32,10 +31,7 @@ export const messageRouter = router({
         .query(async ({ ctx, input }) => {
             const { id } = input
             const conversation = await ctx.deta.messages.get(id)
-            return parseDateFields(
-                conversation as any as types.deta.Message,
-                ['updatedAt', 'createdAt'] as const,
-            )
+            return parseDateFields(conversation as any as types.deta.Message, ['updatedAt', 'createdAt'] as const)
         }),
 
     create: publicProcedure

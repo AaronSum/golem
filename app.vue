@@ -1,22 +1,9 @@
 <script lang="ts" setup>
 useHead({
-    title: '86GPT - Golem',
+    title: '86GPT - 86Links',
     meta: [
         { name: 'description', content: '86GPT @86links' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1' },
-        { property: 'og:image', content: '/og-image.png' },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-    ],
-    link: [
-        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
-        { rel: 'icon', type: 'image/png', sizes: '150x150', href: '/mstile-150x150.png' },
-        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
-        { rel: 'icon', type: 'image/png', sizes: '192x192', href: '/android-chrome-192x192.png' },
-        { rel: 'icon', type: 'image/png', sizes: '256x256', href: '/android-chrome-256x256.png' },
-        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
-        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-        { rel: 'mask-icon', href: '/safari-pinned-tab.svg', color: '#5bbad5' },
     ],
 })
 const { isMobileSafari } = useDevice()
