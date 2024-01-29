@@ -34,7 +34,7 @@ watch(() => conversationSettings, async (newSettings) => {
                 z-999 py-4 px-6
             >
                 <GoTypography title>
-                    Settings
+                    设置
                 </GoTypography>
 
                 <!-- <SettingsModelSelect v-model="conversationSettings.model" /> -->
