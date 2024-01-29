@@ -28,7 +28,7 @@ function onToggleSearchBar() {
     >
         <div text-color font-bold font-title text-5 px-3 my-4 flex items-center>
             <div>
-                Messages
+                对话列表
             </div>
 
             <GoButton
@@ -55,7 +55,7 @@ function onToggleSearchBar() {
                     secondary icon="i-tabler-plus"
                     @click="onCreateConversation"
                 >
-                    New chat
+                    新建对话
                 </GoButton>
                 <GoLongPressButton
                     :duration="1500"
@@ -64,26 +64,26 @@ function onToggleSearchBar() {
                     success-style="!ring-red"
                     @success="clearConversations"
                 >
-                    Clear all
+                    清空对话
                 </GoLongPressButton>
             </div>
-            <SidebarApiKeyAlert
+            <!-- <SidebarApiKeyAlert
                 v-if="!apiKey"
                 mt-3 mx-2
                 @click="navigateTo('/settings/api-key')"
-            />
+            /> -->
             <div
                 text-color-lighter my-6 text-5 tracking--1px w-full
                 flex justify-center items-center
             >
-                <img
+                <!-- <img
                     :src="
                         isSidebarCompact
                             ? `/image/logo-${colorMode.value}-square-transparent.svg`
                             : `/image/logo-${colorMode.value}-lettered.svg`
                     "
                     :class="[isSidebarCompact ? 'w-12' : 'w-24']" op-60
-                >
+                > -->
             </div>
         </div>
     </div>

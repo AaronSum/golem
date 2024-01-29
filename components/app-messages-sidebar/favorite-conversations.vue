@@ -24,7 +24,7 @@ const conversationsSortedByUpdatedAt = computed(() => {
 <template>
     <div>
         <div v-if="conversationsSortedByUpdatedAt?.length" uppercase font-bold font-text text-13px text-color-lighter my-2 flex items-center px-3>
-            Favorites
+            收藏对话
         </div>
         <div
             max-h-100 overflow-y-auto overflow-x-hidden w-full pb-2

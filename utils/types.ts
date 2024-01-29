@@ -9,6 +9,7 @@ export namespace types {
         createdAt: Date
         updatedAt: Date
         type?: 'chat' | 'embbeded'
+        personaId?: string
         systemMessage?: string
         metadata?: ConversationMetadata
         settings?: ConversationSettings

@@ -3,7 +3,7 @@ const { modelUsed } = useSettings()
 
 const options = [
     { value: 'ERNIE-Bot-4', label: 'ERNIE-Bot-4', icon: 'i-tabler-brand-openai' },
-    { value: 'ERNIE-Bot-turbo', label: 'ERNIE-Bot-turbo', icon: 'i-tabler-brand-openai' },
+    { value: 'ERNIE-Bot', label: 'ERNIE-Bot', icon: 'i-tabler-brand-openai' },
 ] as const
 
 function onClick(model: string) {

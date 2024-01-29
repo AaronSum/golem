@@ -23,8 +23,8 @@ const conversationsSortedByUpdatedAt = computed(() => {
 
 <template>
     <div>
-        <div uppercase font-bold font-text text-13px text-color-lighter my-2 flex items-center px-3>
-            Recent
+        <div font-bold font-text text-13px text-color-lighter my-2 flex items-center px-3>
+            近期对话
         </div>
         <div
             v-if="conversationsSortedByUpdatedAt?.length" max-h-100 overflow-y-auto overflow-x-hidden w-full

@@ -36,14 +36,14 @@ const onCreateConversation = async () => {
             text-color mb-2 flex items-center
         >
             <div>
-                History
+                对话历史
             </div>
             <div
                 v-if="conversationList?.length" ml-auto
                 text-10px sm:text-13px
                 text-color-lighter uppercase
             >
-                {{ conversationList?.length }} conversations
+                {{ conversationList?.length }} 对话
             </div>
         </div>
         <div
@@ -62,7 +62,7 @@ const onCreateConversation = async () => {
                 secondary icon="i-tabler-plus"
                 @click="onCreateConversation"
             >
-                New chat
+                新建对话
             </GoButton>
             <GoLongPressButton
                 :duration="1500"
@@ -71,7 +71,7 @@ const onCreateConversation = async () => {
                 success-style="!ring-red"
                 @success="clearConversations"
             >
-                Clear all
+                清除所有
             </GoLongPressButton>
         </div>
     </div>
